@@ -7,18 +7,10 @@ class APIClient{
 
     companion object {
         private val baseURL: String="http://api.nytimes.com/svc/"
-        private lateinit var retrofit: Retrofit
-
-        val client: Retrofit
-        get() {
-            if(retrofit==null){
-                retrofit = Retrofit.Builder()
+        val client: Retrofit = Retrofit.Builder()
                         .baseUrl(baseURL)
                         .addConverterFactory(GsonConverterFactory.create())
                         .build()
-            }
-            return retrofit
         }
-    }
 
 }

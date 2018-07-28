@@ -54,8 +54,8 @@ class MainActivity : BaseActivity(), MostPopularRecyclerViewAdapter.OnItemClickL
             when(it?.status){
                 Resource.Status.LOADING -> viewModel.hideProgress.value = false
                 Resource.Status.ERROR -> {
-                    viewModel.hideProgress.value = false
-                    Snackbar.make(rootView, it?.throwable?.message.toString(), Snackbar.LENGTH_LONG).show()
+                    viewModel.hideProgress.value = true
+                    Snackbar.make(drawer_layout, it?.throwable?.message.toString(), Snackbar.LENGTH_LONG).show()
                 }
                 Resource.Status.SUCCESS -> {
                     viewModel.hideProgress.value = true

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NYTimes Sample</string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+    <string name="nav_header_title">NyTimes</string>
+    <string name="nav_header_subtitle">jitendar7@gmail.com</string>
+</resources>
